@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+html {
+	scroll-behavior: smooth;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	padding: 0;
+	background-color: #EADBC8;
+}
+
+main {
+	padding: 0.5rem;
+}
+
+#content {
+	flex: 5;
+	display: flex;
+	flex-flow: column nowrap;
+	gap: .8rem;
+}
+
+h2 {
+	text-transform: uppercase;
+	color: #022179;
+}
+
+.navbar {
+	border-bottom: 1px solid #022179;
+	background-color: #EADBC8;
+	padding: 10px 0;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 1000;
+}
+
+.navbar-container {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo img {
+	width: 200px;
+}
+
+.menu-toggle {
+	font-size: 1.5em;
+	cursor: pointer;
+	display: none;
+}
+
+.navbar-links {
+	list-style: none;
+	display: flex;
+	gap: 20px;
+}
+
+.navbar-links li {
+	margin: 0;
+}
+
+.navbar-links a {
+	text-decoration: none;
+	color: #022179;
+	font-weight: bold;
+}
+
+.navbar-links a:hover {
+	color: black;
+	border-bottom: 2px solid #022179;
+}
+
+/* landing page start */
+.landing-page {
+	padding: 5rem 0;
+	display: flex;
+	flex: 1;
+	align-items: center;
+}
+
+.title {
+	font-size: 3rem;
+	color: #022179;
+	margin: 1rem;
+	text-transform: uppercase;
+}
+
+.page-description {
+	flex: 1 1;
+	margin: 0;
+	padding: 0 3rem;
+}
+
+.page-description p {
+	line-height: 1.7rem;
+	font-size: 1.2rem;
+	margin: 1rem;
+	padding: 1rem 0;
+}
+
+.page-description a {
+	text-decoration: none;
+	padding: .8rem 2.5rem;
+	margin: 1rem;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 1rem;
+	border: 3px solid transparent;
+	border-radius: 999px;
+	background-color: #022179;
+	color: whitesmoke;
+	cursor: pointer;
+	transition: all .15s ease-in;
+}
+
+.page-description a:hover {
+	border: 3px solid #022179;
+	color: #022179;
+	background-color: transparent;
+}
+
+.page-description a:active {
+	background-color: transparent;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+}
+
+.page-image {
+	flex: 1;
+	display: flex;
+}
+
+.page-image img {
+	margin: auto;
+	width: 400px;
+	border-radius: 50%;
+}
+
+/* landing page end */
+
+/* about us start */
+.about-content {
+	padding: 3rem 0;
+}
+
+.about-content h2 {
+	text-align: center;
+	margin: 2rem;
+}
+
+.about-content p {
+	margin: 1rem;
+	text-align: center;
+}
+
+.team-container {
+	float: left;
+	width: 33.3%;
+}
+
+.card-team {
+	background-color: #F8F0E5;
+	box-shadow: 0 4px 20px 0 rgb(3, 34, 120);
+	margin: 8px;
+	padding: 0.5rem;
+	border-radius: 5px;
+}
+
+.photo img {
+	width: 100%;
+	padding: 0 25%;
+}
+
+.card-content {
+	padding: 0 16px;
+}
+
+.card-content p a {
+	text-decoration: none;
+	color: black;
+}
+
+.card-content p a:hover {
+	color: #022179;
+}
+
+.button {
+	border: none;
+	outline: 0;
+	display: inline-block;
+	padding: 8px;
+	text-transform: uppercase;
+	color: white;
+	background-color: #022179;
+	text-align: center;
+	cursor: pointer;
+	width: 100%;
+}
+
+.button:hover {
+	background-color: #555;
+}
+
+/* about us end */
+
+/* product start */
+.product-content {
+	display: flex;
+	justify-content: center;
+	gap: 5rem;
+	padding: 3rem 0;
+}
+
+.product-card {
+	background-color: #F8F0E5;
+	box-shadow: 0 4px 20px 0 rgb(3, 34, 120);
+	padding: 10px;
+	margin: 10px;
+	max-width: 300px;
+	text-align: center;
+	border-radius: 5px;
+}
+
+.product-title {
+	font-size: 1.2rem;
+}
+
+.product-image {
+	max-width: 100%;
+}
+
+.product-price {
+	font-size: 1.1rem;
+	color: #027902;
+}
+
+.product-description {
+	margin: 10px 0;
+}
+
+.product-rating {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.stars {
+	font-size: 1.2rem;
+	margin-right: 5px;
+}
+
+.buy-now {
+	background-color: #022179;
+	border: none;
+	border-radius: 5px;
+	padding: 10px 20px;
+	margin: 10px;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+.buy-now a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.buy-now:hover {
+	background-color: #027902;
+}
+
+.buy-now:active {
+	box-shadow: 0 5px #666;
+	transform: translateY(2px);
+}
+
+/* product end*/
+
+/* contact us start*/
+.form-contact {
+	padding: 3rem 0;
+	text-align: center;
+}
+
+.form-content {
+	background-color: #F8F0E5;
+	box-shadow: 0 4px 20px 0 rgb(3, 34, 120);
+	padding: 1rem;
+	margin: 1rem;
+	border-radius: 5px;
+}
+
+.form-contact h2 {
+	font-size: 24px;
+	margin: 30px 0;
+}
+
+.form-contact form {
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+.form-contact label {
+	display: block;
+	margin-bottom: 10px;
+	text-align: left;
+}
+
+.form-contact input,
+.form-contact textarea {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+.form-contact button {
+	text-align: left;
+	background-color: #032278;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.form-contact button:active {
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+}
+
+/* contact us end */
+
+/* biodata start */
+.biodata {
+	background-color: #F8F0E5;
+	width: 800px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0 4px 20px 0 rgb(3, 34, 120);
+	border-radius: 5px;
+	margin: 1rem auto;
+	padding: 2rem 0;
+}
+
+.biodata img {
+	width: 200px;
+}
+
+.biodata h2 {
+	text-align: center;
+}
+
+.biodata p {
+	padding: 0 1rem;
+}
+
+.sosmed-section ul {
+	list-style: none;
+	padding: 0;
+	margin: 8px;
+}
+
+.sosmed-section li {
+	display: inline-block;
+	margin: 0 10px;
+}
+
+.sosmed-section a {
+	text-decoration: none;
+	color: #022179;
+	font-size: 1.5rem;
+}
+
+.sosmed-section a:hover {
+	color: #0073e6;
+}
+/* biodata end */
+
+/* footer start */
+.my-footer {
+	font-weight: 700;
+	border-top: 1px solid #022179;
+	background-color: #EADBC8;
+	color: #022179;
+	text-align: center;
+}
+/* footer end */
+
+@media screen and (max-width: 768px) {
+
+	/* NAVBAR */
+	.navbar-links {
+		display: none;
+		flex-direction: column;
+		position: absolute;
+		top: 60px;
+		left: 0;
+		width: 100%;
+		background-color: #ebdbc7;
+		padding: 10px;
+	}
+
+	.navbar-links.show {
+		display: flex;
+	}
+
+	.navbar-links li {
+		margin-bottom: 10px;
+	}
+
+	.menu-toggle {
+		display: block;
+		padding: 12px;
+	}
+
+	/* NAVBAR END */
+
+	/* LANDING PAGE */
+	.landing-page {
+		flex-direction: column-reverse;
+		gap: 1rem;
+	}
+
+	.page-image img {
+		width: 100%;
+	}
+
+	.page-description {
+		padding: 0;
+	}
+
+	/* LANDING PAGE END */
+	.card-team img {
+		width: 100%;
+	}
+
+	.team-container {
+		width: 100%;
+		display: block;
+	}
+
+	.card-content p {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+
+	.product-content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.biodata {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.biodata section p {
+		text-align: center;
+	}
+
+	.sosmed-section {
+		text-align: center;
+	}
+}
